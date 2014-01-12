@@ -15,8 +15,6 @@ class Sfml2 < Formula
   depends_on 'doxygen' if build.with? 'docs'
 
   def install
-    ENV.universal_binary if build.universal?
-
     args = ["-DCMAKE_INSTALL_FRAMEWORK_PREFIX=#{prefix}"]
     args << "-DSFML_BUILD_DOC=1" if build.include? 'with-docs'
 
@@ -24,8 +22,9 @@ class Sfml2 < Formula
       args << "-DCMAKE_CXX_COMPILER=/usr/bin/clang++"
       args << "-DCMAKE_C_COMPILER=/usr/bin/clang"
       args << "-DCMAKE_CXX_FLAGS=-stdlib=libc++"
-      args << "-DCMAKE_C_FLAGS=-stdlib=libc++"
     end
+
+    args << "-DCMAKE_OSX_ARCHITECTURES=i386;x86_64" if build.universal?
 
     system "cmake", ".", *(std_cmake_args+args)
     system "make", "install"
