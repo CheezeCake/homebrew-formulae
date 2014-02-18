@@ -1,6 +1,6 @@
 require "formula"
 
-class Ls-- < Formula
+class Lsxx < Formula
   homepage "https://github.com/trapd00r/ls--"
   url "https://github.com/trapd00r/ls--/archive/v0.340.tar.gz"
   sha1 "0855e74b89d93cb19c6bd702b0d257434de2cc3b"
