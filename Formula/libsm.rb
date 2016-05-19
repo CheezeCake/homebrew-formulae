@@ -16,7 +16,7 @@ class Libsm < Formula
                           "--without-libuuid",
                           "--without-xmlto",
                           "--without-fop",
-                          "--disable-docs"
+                          "--disable-docs",
                           "--prefix=#{prefix}"
 
     system "make", "install"

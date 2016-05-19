@@ -16,7 +16,7 @@ class Libice < Formula
                           "--without-xmlto",
                           "--without-fop",
                           "--disable-docs",
-                          "--disable-specs"
+                          "--disable-specs",
                           "--prefix=#{prefix}"
 
     system "make", "install"
