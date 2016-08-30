@@ -5,7 +5,7 @@ class Mono < Formula
   #url "http://download.mono-project.com/sources/mono/mono-3.2.6.tar.bz2"
   url "http://download.pokorra.de/mono/tarballs/mono-3.2.6.tar.bz2"
   #sha1 "27a08194f21ab853c669f42a1435e3a6fc326b8b"
-  sha1 "fd40c7ec7b91986ebcc06474d2891112b91a8882"
+  sha256 "a8aa127fefe0eb5b9fd2bfbf42d83713f2c0b9483244f4b6b9e972aa85194a68"
 
   depends_on :x11
   depends_on 'libgdiplus'
