@@ -3,7 +3,7 @@ require "formula"
 class Libgdiplus < Formula
   homepage "http://www.mono-project.com/Libgdiplus"
   url "http://download.mono-project.com/sources/libgdiplus/libgdiplus-2.10.9.tar.bz2"
-  sha1 "5e127b818d9af032928c7f7cfba812c1231a8478"
+  sha256 "6ddeb6c327bada7cb6e06d1a20714f526a0c69520dfd42c12ddd032c3c5d964e"
 
   depends_on 'cairo'
   depends_on 'fontconfig'

@@ -3,7 +3,7 @@ require "formula"
 class Lsxx < Formula
   homepage "https://github.com/trapd00r/ls--"
   url "https://github.com/trapd00r/ls--/archive/v0.340.tar.gz"
-  sha1 "0855e74b89d93cb19c6bd702b0d257434de2cc3b"
+  sha256 "6f209318ab37bcf89d1ee2a6a16b993a514f2c0adf7ade7d694d5a64c80f1ffe"
 
   head "https://github.com/trapd00r/ls--.git"
 
